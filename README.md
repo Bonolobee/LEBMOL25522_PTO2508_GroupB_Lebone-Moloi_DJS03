@@ -50,7 +50,7 @@ Install dependencies:
 npm install
 ```
 
-Start the development server:
+Start the Vite development server:
 
 ```bash
 npm run dev
@@ -61,6 +61,8 @@ Open the local URL shown in the terminal, usually:
 ```text
 http://localhost:5173/
 ```
+
+> Do not use Live Server for this project. It cannot serve `.jsx` modules correctly, so the app must run through Vite.
 
 ## React Concepts Used
 

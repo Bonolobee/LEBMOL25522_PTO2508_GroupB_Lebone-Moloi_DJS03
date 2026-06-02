@@ -1,4 +1,4 @@
-// Please note that this file contains only the genre data. All other podcast information required for this challenge can be accessed via the API at: https://podcast-api.netlify.app/
+// Genre data is local so podcast previews can show readable tags from API genre ids.
 
 export const genres = [
   {
@@ -110,5 +110,52 @@ export const genres = [
       "9739",
       "9691",
     ],
+  },
+];
+
+export const fallbackPodcasts = [
+  {
+    id: "10716",
+    title: "Something Was Wrong",
+    description:
+      "A true-crime docuseries about discovery, trauma, and recovery from shocking life events and abusive relationships.",
+    seasons: 14,
+    image:
+      "https://content.production.cdn.art19.com/images/cc/e5/0a/08/cce50a08-d77d-490e-8c68-17725541b0ca/9dcebd4019d57b9551799479fa226e2a79026be5e2743c7aef19eac53532a29d66954da6e8dbdda8219b059a59c0abe6dba6049892b10dfb2f25ed90d6fe8d9a.jpeg",
+    genres: [1, 2],
+    updated: "2022-11-03T07:00:00.000Z",
+  },
+  {
+    id: "5279",
+    title: "American History Tellers",
+    description:
+      "A history podcast exploring the events, people, and movements that shaped America.",
+    seasons: 51,
+    image:
+      "https://content.production.cdn.art19.com/images/a4/8f/53/79/a48f5379-a90e-4197-915c-c0645e0d9336/8d9e6ebc4d65a9575fa626318e426fcf8be7f98ea0c1b7b103de2b32def46ded57537627d80b36f55edf7c9a8ad639bd9816f68c79b56845203a0b5bc4a63a55.png",
+    genres: [3],
+    updated: "2022-11-02T07:01:00.000Z",
+  },
+  {
+    id: "6807",
+    title: "Even the Rich",
+    description:
+      "A storytelling show about celebrity dynasties, public scandals, and the lives behind famous names.",
+    seasons: 33,
+    image:
+      "https://content.production.cdn.art19.com/images/c3/55/d2/da/c355d2da-f845-47df-a4e6-22b70a5082bb/c290fe89d3a699dd5c316f5f4cfe2ca942183cef5d6ac4fc2d7d6df296690c9e7183f79422dcb0b37af7c7e7e59de0e36cddd3b01500bf066a470614c9a0af6d.png",
+    genres: [4, 5, 3],
+    updated: "2022-11-01T07:08:00.000Z",
+  },
+  {
+    id: "10276",
+    title: "This Podcast Will Kill You",
+    description:
+      "A science podcast that explores diseases through history, biology, and public health.",
+    seasons: 5,
+    image:
+      "https://content.production.cdn.art19.com/images/f5/16/e0/99/f516e099-4c64-4737-9fdb-55f4d45a4003/6d14be58e0a54d21128c239dd933e0f3c36ca00f85ea7294cbea91a2b214d2384361c2a765842eef66e8583b2c21302c8fd2b1eb4d32e3805481292d758f20aa.jpeg",
+    genres: [1],
+    updated: "2022-10-25T07:01:00.000Z",
   },
 ];

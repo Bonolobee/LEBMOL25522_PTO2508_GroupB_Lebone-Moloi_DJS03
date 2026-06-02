@@ -10,9 +10,18 @@ const DAY = HOUR * 24;
  */
 export function formatUpdatedDate(dateString) {
   const date = new Date(dateString);
-  const difference = Date.now() - date.getTime();
 
   if (Number.isNaN(date.getTime())) return "Updated date unavailable";
+
+  const difference = Date.now() - date.getTime();
+  if (difference < 0) {
+    return `Updated ${date.toLocaleDateString("en-ZA", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    })}`;
+  }
+
   if (difference < MINUTE) return "Updated just now";
   if (difference < HOUR) return `Updated ${Math.floor(difference / MINUTE)} minutes ago`;
   if (difference < DAY) return `Updated ${Math.floor(difference / HOUR)} hours ago`;

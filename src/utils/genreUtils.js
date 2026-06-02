@@ -7,6 +7,9 @@ import { genres } from "../data.js";
  */
 export function getGenreNames(genreIds = []) {
   return genreIds
-    .map((id) => genres.find((genre) => genre.id === id)?.title)
+    .map((id) => {
+      const numericId = Number(id);
+      return genres.find((genre) => genre.id === numericId)?.title;
+    })
     .filter(Boolean);
 }

@@ -2,74 +2,77 @@
 
 ## Overview
 
-In this project, you will build the landing page for a podcast discovery app using **React**. Your goal is to fetch podcast data from an external API and dynamically render a **responsive grid of podcast previews**. This project focuses on **data fetching**, **component structure**, **rendering logic**, and **layout styling**.
+This project is a React landing page for a podcast discovery app. It fetches podcast data from the external podcast API, shows loading and error states, and renders a responsive grid of reusable podcast preview cards.
 
----
+## Features
 
-## Core Objectives
+- Fetches podcast data from `https://podcast-api.netlify.app/`.
+- Uses `useEffect()` to fetch once when the app loads.
+- Uses `useState()` to manage podcast data, loading, error, and empty states.
+- Renders podcast previews with reusable React components.
+- Displays podcast image, title, seasons, genre names, and formatted last updated date.
+- Uses responsive CSS Grid for desktop, tablet, and mobile screens.
+- Includes JSDoc comments for key functions and components.
 
-- Fetch podcast data from an API: https://podcast-api.netlify.app/ on initial page load.
-- Display a loading indicator while data is being fetched, and handle errors or empty results with a clear user message.
-- Render a responsive **grid layout** of podcast previews using modular, reusable React components.
-- Pass podcast data into components via props and render each podcast card with the following:
-  - Podcast **image**
-  - Podcast **title**
-  - Number of **seasons**
-  - Associated **genre names**
-  - Formatted **last updated** date (e.g., "2 days ago")
-- Apply clean, consistent layout and styling across different screen sizes using CSS Grid or Flexbox.
-- Maintain high-quality, readable code with clear structure and **JSDoc comments** for key functions and components.
+## Project Structure
 
----
+```text
+src/
+  components/
+    PodcastGrid.jsx
+    PodcastPreviewCard.jsx
+  utils/
+    dateUtils.js
+    genreUtils.js
+    podcastApi.js
+  App.jsx
+  data.js
+  main.jsx
+  styles.css
+index.html
+package.json
+```
 
-## Technical Requirements
+## Main Files
 
-- Use **React functional components**
-- Use the **Fetch API**
-- Use `useEffect()` to fetch data once on mount
-- Use `useState()` to manage podcast data
-- Use `.map()` to dynamically render PodcastPreviewCard components
-- Format dates using `date-fns` or a custom formatter
+- `src/App.jsx` controls the main app state and renders loading, error, empty, or success views.
+- `src/utils/podcastApi.js` fetches podcast data from the API.
+- `src/components/PodcastGrid.jsx` maps podcast data into preview cards.
+- `src/components/PodcastPreviewCard.jsx` displays one podcast preview using props.
+- `src/utils/genreUtils.js` converts genre IDs into readable genre names.
+- `src/utils/dateUtils.js` formats the podcast updated date.
 
----
+## How To Run
 
-## Responsiveness Requirements
+Install dependencies:
 
-- Must look good on:
-  - Desktop (≥1200px)
-  - Tablet (~768px)
-  - Mobile (~375px)
-- Use **CSS Grid** or **Flexbox**
-- Media queries or frameworks like **Tailwind CSS** are allowed
+```bash
+npm install
+```
 
----
+Start the development server:
 
-## Deliverables
+```bash
+npm run dev
+```
 
-- **Functional React Application**
+Open the local URL shown in the terminal, usually:
 
-  - A working React app that fetches podcast data from an external API on initial load.
-  - The app renders a grid of podcast previews using reusable components.
+```text
+http://localhost:5173/
+```
 
-- **Loading, Error, and Empty States**
+## React Concepts Used
 
-  - A clear loading indicator is displayed while fetching data.
-  - Meaningful error or empty state messaging is shown if the fetch fails or returns no results.
+- Functional components
+- Props
+- `useState`
+- `useEffect`
+- Fetch API
+- Conditional rendering
+- `.map()` list rendering
+- Modular component structure
 
-- **Podcast Preview Card Component**
+## Original Brief
 
-  - A reusable component that displays:
-    - Podcast image
-    - Podcast title
-    - Number of seasons
-    - Genre tags
-    - Last updated date in a human-readable format (e.g., "3 days ago")
-
-- **Responsive Layout**
-
-  - Grid layout that adapts to mobile, tablet, and desktop screen sizes using responsive design principles.
-
-- **Codebase**
-  - Clean, modular code with clearly separated components.
-  - All major functions and modules documented with **JSDoc** comments.
-  - Consistent formatting across JavaScript, JSX, HTML, and CSS files.
+Build a React podcast landing page that fetches podcast data from an API, displays loading and error states, renders a responsive grid of podcast previews, and keeps the code clean, modular, and documented.

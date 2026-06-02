@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import PodcastGrid from "./components/PodcastGrid.jsx";
 import { fetchPodcasts } from "./utils/podcastApi.js";
 
 /**
@@ -43,7 +44,7 @@ export default function App() {
       {status === "loading" && <p className="state-message">Loading podcasts...</p>}
       {status === "error" && <p className="state-message state-message--error">{errorMessage}</p>}
       {status === "empty" && <p className="state-message">No podcasts are available right now.</p>}
-      {status === "success" && <p className="state-message">{podcasts.length} podcasts loaded.</p>}
+      {status === "success" && <PodcastGrid podcasts={podcasts} />}
     </main>
   );
 }

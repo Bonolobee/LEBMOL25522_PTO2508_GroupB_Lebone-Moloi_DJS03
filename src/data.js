@@ -12,7 +12,7 @@ export const genres = [
     id: 2,
     title: "Investigative Journalism",
     description:
-      "Looking for a collection of podcasts that will keep you on the edge of your seat? Look no further than our selection of investigative journalism podcasts! These shows feature in-depth reporting and in-depth analysis of some of the most important and intriguing stories of our time. From breaking news to long-form investigations, these podcasts have it all. Whether you're a news junkie or just looking for something to keep you informed and engaged, these podcasts are the perfect choice. ",
+      "Looking for a collection of podcasts that will keep you on the edge of your seat? Look no further than our selection of investigative journalism podcasts! These shows feature in-depth reporting and in-depth analysis of some of the most important and intriguing stories of our time. From breaking news to long-form investigations, these podcasts have it all. Whether you're a news junkie or just looking for something to keep you informed and engaged, these podcasts are the perfect choice.",
     shows: [
       "10716",
       "5675",
@@ -59,7 +59,7 @@ export const genres = [
     id: 4,
     title: "Comedy",
     description:
-      "Get ready to laugh with our collection of comedy podcasts! Whether you're in need of a pick-me-up or just looking for something to make you chuckle, our selection of shows has you covered. From stand-up comedy to improv, our podcasts feature a wide range of comedic styles and formats. Listen to some of the funniest comedians and comedy writers as they share their takes on current events, pop culture, and everyday life. These podcasts are perfect for anyone looking to add a little humor to their day. ",
+      "Get ready to laugh with our collection of comedy podcasts! Whether you're in need of a pick-me-up or just looking for something to make you chuckle, our selection of shows has you covered. From stand-up comedy to improv, our podcasts feature a wide range of comedic styles and formats. Listen to some of the funniest comedians and comedy writers as they share their takes on current events, pop culture, and everyday life. These podcasts are perfect for anyone looking to add a little humor to their day.",
     shows: ["6807"],
   },
   {
@@ -94,7 +94,7 @@ export const genres = [
     id: 9,
     title: "Kids and Family",
     description:
-      "Bring some fun and learning to your family's ears with our collection of kids and family podcasts. These shows offer a wide range of entertaining and educational content for children of all ages, from interactive storytelling to science experiments, music, comedy, and more. Listen to expert educators and entertainers as they engage and inspire young minds with their engaging content and interactive activities. These podcasts are perfect for anyone looking for a fun and educational way to keep the kids entertained and engaged. ",
+      "Bring some fun and learning to your family's ears with our collection of kids and family podcasts. These shows offer a wide range of entertaining and educational content for children of all ages, from interactive storytelling to science experiments, music, comedy, and more. Listen to expert educators and entertainers as they engage and inspire young minds with their engaging content and interactive activities. These podcasts are perfect for anyone looking for a fun and educational way to keep the kids entertained and engaged.",
     shows: [
       "8188",
       "9687",

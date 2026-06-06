@@ -219,11 +219,15 @@ button {
   margin: 0;
 }
 
+.podcast-card__meta {
+  margin-bottom: 2px;
+}
+
 .podcast-card__genres {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 14px 0 18px;
+  margin: 8px 0 18px;
 }
 
 .genre-tag {
@@ -236,7 +240,8 @@ button {
 }
 
 .podcast-card__updated {
-  margin-top: auto;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1180px) {
